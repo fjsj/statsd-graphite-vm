@@ -1,3 +1,0 @@
-[submodule "cookbooks/postgres"]
-	path = cookbooks/postgres
-	url = https://github.com/fjsj/cookbook-postgresql-9.2.git

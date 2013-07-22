@@ -3,7 +3,9 @@
 
 site 'http://community.opscode.com/api/v1'
 
-cookbook 'apt'
+cookbook 'apt',
+    :git => 'https://github.com/opscode-cookbooks/apt.git'
+
 cookbook 'build-essential'
 
 cookbook 'graphite',
@@ -14,3 +16,6 @@ cookbook 'statsd',
 
 cookbook 'nodejs',
     :git => 'https://github.com/hectcastro/chef-nodejs'
+
+cookbook 'postgres',
+    :git => 'https://github.com/fjsj/cookbook-postgresql-9.2.git'
