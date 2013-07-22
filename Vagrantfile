@@ -20,7 +20,16 @@ Vagrant::Config.run do |config|
     chef.add_recipe 'graphite'
     chef.add_recipe 'nodejs'
     chef.add_recipe 'statsd'
-
+    chef.add_recipe 'openssl'
+    chef.add_recipe 'postgresql'
+    
+    chef.json = {
+      "postgresql" => {
+        "password" => {
+          "postgres" => "md5eead77ff1bce6cff9efe1fa60380caf4"
+        }
+      }
+    }  
   end
 
 end
