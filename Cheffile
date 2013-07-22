@@ -17,5 +17,5 @@ cookbook 'statsd',
 cookbook 'nodejs',
     :git => 'https://github.com/hectcastro/chef-nodejs'
 
-cookbook 'postgres',
+cookbook 'postgresql',
     :git => 'https://github.com/fjsj/cookbook-postgresql-9.2.git'
